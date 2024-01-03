@@ -2,6 +2,12 @@ const yourURL = document.querySelector("#yourUrl");
 const qrCode = document.querySelector("#qr-code");
 
 
+const isValidUrl = (url) => {
+  // Regular expression for a valid URL
+  const urlRegex = /^(https?:\/\/)?([\w.]+)\.([a-z]{2,})(\/.*)?$/i;
+  return urlRegex.test(url);
+};
+
 const generateSubmit = (e) => {
   e.preventDefault();
   clearQR();
@@ -10,7 +16,7 @@ const generateSubmit = (e) => {
   console.log(url);
  
   //form validation
-  if (url === "") {
+  if (!isValidUrl(url)) {
     alert("please enter a valid url");
   } else {
     generateQrCode(url);
