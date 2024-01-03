@@ -1,0 +1,22 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+@include until($desktop) {
+    .navbar-menu {
+        display: block;
+        opacity: 0;
+
+        position: absolute;   /* or float: left; width: 100%;*/
+        left: 0;
+        right: 0;
+
+        transform: translateY(-50%);
+        transition: all .7s ease-in-out;
+        pointer-events: none;
+    }
+
+    .navbar-menu.is-active {
+        opacity: 1;
+        transform: none;
+        pointer-events: auto;
+    }
+}

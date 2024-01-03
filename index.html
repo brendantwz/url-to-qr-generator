@@ -4,10 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL to QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
 
+    <nav class="navbar pt-4 px-4" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="freg_logo.JPG" width="44" height="30">
+            <p class="title is-6">QRFreg</p>
 
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item">
+                    <div class="dropdown is-hoverable">
+                        <div class="dropdown-trigger">
+                          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                            <span>🤔 What is this?</span>
+                            <span class="icon is-small">
+                                <ion-icon name="caret-down-outline"></ion-icon>
+                            </span>
+                          </button>
+                        </div>
+                        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                          <div class="dropdown-content">
+                            <div class="dropdown-item">
+                              <p>Hello Hover-er! A quick summary that QRFreg is developed by 
+                                
+                                <a href="https://brendantwz.com" target="_blank">@brendantwz</a>
+
+                                <strong>any type of content</strong> within the dropdown menu.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </a>
+        
+                <a class="navbar-item">
+                Documentation
+                </a>
+            </div>
+      
+        </div>
+      </nav>
+
+    <section class="section">
+
+        <h1 class="title">
+            QR Code Generator
+        </h1>
+        <p class="subtitle">
+            Generating your <strong>URL to QR Code</strong> with just a simple click!
+        </p>
+
+        <div class="field">
+            <p class="control has-icons-left has-icons-right">
+                <input class="input" type="email" placeholder="Website URL">
+                <span class="icon is-small is-left">
+                    <ion-icon name="globe-outline"></ion-icon>
+                </span>
+            </p>
+        </div>
+        
+        <div class="field">
+            <p class="control">
+                <button class="button is-success">
+                Convert URL
+                </button>
+            </p>
+        </div>
+
+        <figure class="box image is-128x128">
+            <img src="qr_img.png">
+        </figure>
+
+        <!-- <progress class="progress is-small is-primary" max="100">15%</progress> -->
+      </section>
+
+      <script src="index copy.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
