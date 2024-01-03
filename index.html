@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL to QR Code Generator</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 
     <nav class="navbar pt-4 px-4" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
-            <img src="freg_logo.JPG" width="44" height="30">
+          <a class="navbar-item" href="index.html">
+            <img src="images/freg_logo.JPG" width="44" height="30">
             <p class="title is-6">QRFreg</p>
 
           </a>
@@ -48,44 +49,49 @@
                         </div>
                     </div>
                 </a>
-        
-                <a class="navbar-item">
-                    
-                </a>
             </div>
-      
         </div>
       </nav>
 
     <section class="section">
-
-        <h1 class="title">
+        <h1 class="title has-text-centered">
             QR Code Converter
         </h1>
-        <p class="subtitle">
+        <p class="subtitle has-text-centered">
             Converting your <strong>URL to QR Code</strong> with just a simple click!
         </p>
 
-        <div class="field">
-            <p class="control has-icons-left has-icons-right">
-                <input class="input" type="email" placeholder="Website URL">
-                <span class="icon is-small is-left">
-                    <ion-icon name="globe-outline"></ion-icon>
-                </span>
-            </p>
-        </div>
-        
-        <div class="field">
-            <p class="control">
-                <button class="button is-success">
-                Convert URL
-                </button>
-            </p>
-        </div>
+        <form id="yourUrl">
+            <div class="columns">
+                <div class="column is-three-quarters is-half is-offset-one-quarter">
+                    <div class="field">
+                        <p class="control has-icons-left has-icons-right">
+                            <input class="input" type="url" id="urlData" placeholder="Website URL">
+                            <span class="icon is-small is-left">
+                                <ion-icon name="globe-outline"></ion-icon>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="field has-text-centered">
+                        <p class="control">
+                            <a href="generated-qr.html" >
+                                <button class="button is-success">
+                                    Convert URL
+                                </button>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </form>
 
-        <figure class="box image is-128x128">
-            <img src="qr_img.png">
-        </figure>
+        <div class="columns pt-5">
+            <div class="column has-text-centered">
+                <figure class="box image is-128x128 is-inline-block">
+                    <div id="qr-code" class="m-auto"></div>
+                </figure>
+            </div>
+        </div>
 
         <!-- <progress class="progress is-small is-primary" max="100">15%</progress> -->
       </section>
@@ -101,7 +107,7 @@
         </div>
       </footer>
       
-      <script src="index copy.js"></script>
+      <script src="index.js"></script>
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

@@ -1,38 +1,54 @@
-import inquirer from "inquirer";
-import qr from "qr-image";
-import fs from "fs";
+const yourURL = document.querySelector("#yourUrl");
+const qrCode = document.querySelector("#qr-code");
 
-inquirer
-  .prompt([{
-    /* Pass your questions in here */
-    message: "Type in your URL",
-    name: "URL",
-  }])
 
-  .then((answers) => {
-    // Use user feedback for... whatever!!
-    const url = answers.URL;
-    var qr_svg = qr.image(url);
-    qr_svg.pipe(fs.createWriteStream('qr_img.png'));
+const generateSubmit = (e) => {
+  e.preventDefault();
+  clearQR();
+ 
+  const url = document.querySelector("#urlData").value;
+  console.log(url);
+ 
+  //form validation
+  if (url === "") {
+    alert("please enter a valid url");
+  } else {
+    generateQrCode(url);
+  }
+};
+ 
+const generateQrCode = (url) => {
+  const qr = new QRCode(document.getElementById("qr-code"), {
+    text: url,
+    width: 128,
+    height: 128,
+  });
+};
+ 
+const clearQR = () => {
+  qrCode.innerHTML = "";
+};
 
-    fs.writeFile('URL.txt', url, (err) => {
-        if (err) throw err;
-        console.log('The URL has been saved!');
+yourURL.addEventListener("submit", generateSubmit);
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
     });
-  })
-  
-  .catch((error) => {
-    if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else went wrong
-    }
   });
 
-/* 
-1. Use the inquirer npm package to get user input.
-2. Use the qr-image npm package to turn the user entered URL into a QR code image.
-3. Create a txt file to save the user input using the native fs node module.
-*/
-
-
+});
