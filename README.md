@@ -3,22 +3,52 @@
 </h1>
 
 <h4 align="center">
-    Powered by Bulma.io and vanilla JS that provides url-to-qrcode converting functionality. Works on both web and mobile (Check it [here](https://brendantwz.github.io/url-to-qr-generator/))
+    Powered by Bulma.io and vanilla JS that provides url-to-qrcode converting functionality. Works on both web and mobile
 </h4>
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+<!--   <a href="https://github.com/brendantwz/simplypress-blogpost">
+    <kbd><img src="public/images/about_image.PNG" width="auto" /></kbd>
+  </a> -->
+
+  <p align="center">
+      <!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+    <br />
+    <br />
+    <a href="https://github.com/brendantwz/url-to-qr-generator/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/brendantwz/url-to-qr-generator/issues">Request Feature</a>
+      
+  </p>
+</div>
 
 <!-- ABOUT THE PROJECT --> 
 ## About The Project :brain:
-<h3>QR Code converter started off with a Node.js application that runs with NPM to inquire an url and save your url in .txt and generate a qr .png</h3> <b>stored in server-side directory</b> <br>
-<br>
-<h3>I have decided to create a client-side version using <b>bulma and vanilla js</b> which I want to work with other css framework such as bulma</h3>
+<p>QR Code converter started off with a Node.js application that runs with NPM to inquire an url and save your url in .txt and generate a qr .png <b>p.s: stored in server-side directory</b> </p><br>
+<p>I have decided to create a client-side version using <b>bulma and vanilla js</b> which I want to work with other css framework such as bulma</p>
 
 
 ### Built With :hammer_and_wrench:
 * Vanilla Javascript - No framework used
-* <a href="https://expressjs.com/">Express.js</a> - backend framework for node.js
-* <a href="https://nodejs.org/en">Node.js</a> - Javascript runtime environment
 * <a href="https://bulma.io/">Bulma.io</a> - CSS framework that is has a set of responsive mobile-first front-end template
 * <a href="https://ionic.io/ionicons">ionicons</a> -  icon libraries
+* <a href="https://nodejs.org/en">Node.js</a> - Javascript runtime environment
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,3 +105,18 @@ Project Link: [https://github.com/brendantwz/url-to-qr-generator](https://github
 * [Ionicons](https://ionic.io/ionicons)
 * [GitHub Pages](https://pages.github.com)
 * [MIT License](https://choosealicense.com/licenses/mit/)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/brendantwz/simplypress-blogpost.svg?style=for-the-badge
+[contributors-url]: https://github.com/brendantwz/simplypress-blogpost/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/brendantwz/simplypress-blogpost.svg?style=for-the-badge
+[forks-url]: https://github.com/brendantwz/simplypress-blogpost/network/members
+[stars-shield]: https://img.shields.io/github/stars/brendantwz/simplypress-blogpost.svg?style=for-the-badge
+[stars-url]: https://github.com/brendantwz/simplypress-blogpost/stargazers
+[issues-shield]: https://img.shields.io/github/issues/brendantwz/simplypress-blogpost.svg?style=for-the-badge
+[issues-url]: https://github.com/brendantwz/simplypress-blogpost/issues
+[license-shield]: https://img.shields.io/github/license/brendantwz/simplypress-blogpost.svg?style=for-the-badge
+[license-url]: https://github.com/brendantwz/simplypress-blogpost/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/brendantwz
