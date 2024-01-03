@@ -105,6 +105,7 @@ Project Link: [https://github.com/brendantwz/url-to-qr-generator](https://github
 * [Ionicons](https://ionic.io/ionicons)
 * [GitHub Pages](https://pages.github.com)
 * [MIT License](https://choosealicense.com/licenses/mit/)
+* [CDNjs](https://cdnjs.com/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
