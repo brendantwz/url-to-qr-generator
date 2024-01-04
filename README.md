@@ -83,6 +83,13 @@ To get a local copy up and running follow these simple example steps.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- ROADMAP -->
+## Roadmap
+
+- [ ] Fix mobile resolution of QR code placement out from the box
+- [ ] Allow user to download QR code in .jpg format
+
+
 <!-- LICENSE -->
 ## License :clipboard:
 
